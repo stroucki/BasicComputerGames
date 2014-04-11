@@ -26,6 +26,10 @@ restructure the code to give explanatory names to game functions.
 If I notice that the game could be improved with altered parameters,
 I will do so, but include comments with the old values.
 
+## Compiling
+
+Instructions to compile are given in the source.
+
 ## Issues
 
 There is currently no one true way of obtaining random numbers,
