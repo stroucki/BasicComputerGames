@@ -2,7 +2,7 @@
 // Basic-Computer-Spiele Band 2
 // Sybex Verlag
 // Converted to C by Michael Stroucken
-// Original by ???
+// Original by Alan Barnes
 
 // cc -o column column.c
 
