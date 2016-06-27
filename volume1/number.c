@@ -4,7 +4,7 @@
 // Converted to C by Michael Stroucken
 // Original by Tom Adametx
 
-// cc -o nicomachus nicomachus.c
+// cc -o number number.c
 
 // Tom Adametx wrote this program while a student at
 // Curtis Junior High School in Sudbury, Massachusetts.
