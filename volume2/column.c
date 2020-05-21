@@ -16,7 +16,7 @@
 // choice uniquely identifies the chosen card.
 
 #include <stdio.h>
-#include <strings.h>
+#include <string.h>
 #include <stdlib.h>
 
 // In the original, the user chose from 21 cards in the deck, using
@@ -66,7 +66,7 @@ void pickdeck() {
   int choice;
 
   for (card=0; card < DECKSIZE; card++) {
-    while (state[choice = random() % NUMCARDS] == 1);
+    while (state[choice = arc4random_uniform(NUMCARDS)] == 1);
     state[choice] = 1;
     deck[card] = choice;
   }
@@ -175,7 +175,6 @@ int main() {
   char *line = NULL;
   size_t linecap = 0;
 
-  srandomdev();
   tab(26);printf("Column\n");
   tab(20);printf("Creative Computing\n");
   tab(18);printf("Morristown, New Jersey\n");
