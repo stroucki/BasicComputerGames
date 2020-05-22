@@ -32,9 +32,10 @@ Instructions to compile are given in the source.
 
 ## Issues
 
-There is currently no one true way of obtaining random numbers,
-so the parts of the programs using random seeders and readers
-may have to be adapted.
+There is currently no one true way of obtaining random numbers, so the 
+parts of the programs using random seeders and readers may have to be 
+adapted. Currently uses arc4random_uniform(3) to obtain random numbers,
+on Linux this requires linking in libbsd.
 
 ## Licence
 
