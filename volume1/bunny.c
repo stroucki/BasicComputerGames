@@ -6,7 +6,7 @@
 // cc -o bunny bunny.c
 
 #include <stdio.h>
-#include <strings.h>
+#include <string.h>
 #include <stdlib.h>
 
 // Draws an ASCII art rendering of a men's magazine's bunny logo

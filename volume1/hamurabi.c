@@ -6,7 +6,7 @@
 // cc -o hamurabi hamurabi.c
 
 #include <stdio.h>
-#include <strings.h>
+#include <string.h>
 #include <stdlib.h>
 
 // David Ahl's note:
@@ -33,8 +33,8 @@ void tab(int num) {
   return;
 }
 
-int fnr(int p) {
-  return random() % p;
+int fnr(unsigned int p) {
+  return arc4random_uniform(p);
 }
 
 void game() {
@@ -247,7 +247,6 @@ void game() {
 }
 
 int main() {
-  srandomdev();
 
   tab(32);printf("Hamurabi\n");
   tab(15);printf("Creative Computing  Morristown, New Jersey\n");

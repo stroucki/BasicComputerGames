@@ -10,7 +10,7 @@
 // Curtis Junior High School in Sudbury, Massachusetts.
 
 #include <stdio.h>
-#include <strings.h>
+#include <string.h>
 #include <stdlib.h>
 
 // A check was added to check for invalid guesses below 1.
@@ -31,7 +31,7 @@ void tab(int num) {
 }
 
 int fnr() {
-  return random() % 5 + 1;
+  return arc4random_uniform(5) + 1;
 }
 
 void game() {
@@ -112,7 +112,6 @@ void game() {
   
 
 int main() {
-  srandomdev();
 
   tab(33);printf("Number\n");
   tab(15);printf("Creative Computing  Morristown, New Jersey\n");
