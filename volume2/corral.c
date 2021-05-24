@@ -114,7 +114,7 @@ void game() {
 
       if (moveInput > 0 && moveInput < 6) {
         int cowboyTarget = cowboyPos + cowboyLeftOfHorse * moveInput;
-        if (cowboyTarget > 0 && cowboyTarget < ARENASIZE) {
+        if (cowboyTarget >= 0 && cowboyTarget < ARENASIZE) {
           inputOk = 1;
           cowboyPos = cowboyTarget;
         }
